@@ -1,5 +1,5 @@
 <?php
-// Occurrences
+/////// Occurrences //////////////////////////
 function countCharacterOccurrences($str)
 { 
     $charCount = []; 
@@ -14,15 +14,13 @@ function countCharacterOccurrences($str)
 
     return $charCount; 
 } 
-// Example usage
+
 $string = "hello world";
 $result = countCharacterOccurrences($string);
-
 foreach ($result as $key => $value) {
     echo $key."-".$value." ";
 }
-
-// isPalindrome
+/////// isPalindrome //////////////////////////
 $input = "nayan";
 $len = strlen($input);
 $isPalindrom = true;
@@ -40,9 +38,16 @@ if($isPalindrom)
 } else {
     echo "Not is Palindrome";
 }
+/////// pro //////////////////////////
 
 
+/////// pro //////////////////////////
 
+
+/////// pro //////////////////////////
+
+
+/////// pro //////////////////////////
 
 
 
