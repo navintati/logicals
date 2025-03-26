@@ -38,18 +38,70 @@ if($isPalindrom)
 } else {
     echo "Not is Palindrome";
 }
-/////// pro //////////////////////////
+/////// PrimeNo //////////////////////////
+for ($i = 1; $i <= 100; $i++) { 
+    $b = 0; 
+    for ($j = 1; $j <= $i; $j++) { 
+        if ($i % $j == 0) { 
+            $b = $b + 1; 
+        } 
+    } 
+    if ($b == 2) { 
+        echo ' ' . $i; 
+    } 
+} 
+/////// isPalindrome //////////////////////////
+$number = 14141;
+$original = $number;
+$reverse = 0;
+while ($number > 0) {
+    $reminder = $number % 10; // Modulus is for Reminder
+    $reverse = ($reverse * 10) + $reminder;
+    $number = (int) ($number / 10);
+}
+if ($original == $reverse) {
+    echo "This Palindrome";
+} else {
+    echo "This Not Palindrome";
+}
+/////// Swipe to var //////////////////////////
+$a = 11;
+$b = 22;
+$a = $a + $b;
+$b = $a - $b;
+$a = $a - $b;
+echo "A = " . $a . " B = " . $b;
+/////// string reverce //////////////////////////
+$str = "hello";
+$reversedStr = "";
+$length = 0;
+while (isset($str[$length])) {
+    $length++;
+}
+for ($i = $length - 1; $i >= 0; $i--) {
+    $reversedStr .= $str[$i];
+}
+echo "Original String: $str <br>";
+echo "Reversed String: $reversedStr";
+/////// Pyramid //////////////////////////
+function triangle($n)
+{
 
+	$k = 2 * $n - 2;
+	for ($i = 0; $i < $n; $i++) {
+		for ($j = 0; $j < $k; $j++)
+			echo " &nbsp";
+		$k = $k - 1;
+		for ($j = 0; $j <= $i; $j++) {
 
-/////// pro //////////////////////////
-
-
-/////// pro //////////////////////////
-
-
-/////// pro //////////////////////////
-
-
+			// printing stars
+			echo "* ";
+		}
+		echo "<br />";
+	}
+}
+$n = 5;
+triangle($n);
 
 
 
